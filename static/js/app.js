@@ -9,25 +9,24 @@ var tbody = d3.select("tbody");
 function buildTable(data) {
     // Clear any existing data
     tbody.html(""); 
-}
 
-// Loop through each object in the data
-// and append a row and cells for each value in the row
-// Add forEach function
-data.forEach((dataRow) => {
-    // Add rows
-    let row = tbody.append("tr");
-    // Loop through each field in the dataRow and add
-    // each value as a table cell (td)
-    // Create function to add data
-    Object.values(dataRow).forEach((val) => {
-    // Set up cells to add data to
-    let cell = row.append("td");
-    // Add data to cells
-    cell.text(val);
+    // Loop through each object in the data
+    // and append a row and cells for each value in the row
+    // Add forEach function
+    data.forEach((dataRow) => {
+        // Add rows
+        let row = tbody.append("tr");
+        // Loop through each field in the dataRow and add
+        // each value as a table cell (td)
+        // Create function to add data
+        Object.values(dataRow).forEach((val) => {
+            // Set up cells to add data to
+            let cell = row.append("td");
+            // Add data to cells
+            cell.text(val);
+        });
     });
-});
-
+}
 // Create function to filter table by user input date
 function handleClick() {
     // Use d3 lib to find html datetime tag and get date value from filter
@@ -47,7 +46,7 @@ function handleClick() {
     // @NOTE: If no date was entered, then filteredData will just be
     // the original tableData
     buildTable(filteredData);
-}
+};
 
 // Attach an event to listen for the form button
 d3.selectAll("#filter-btn").on("click", handleClick);
