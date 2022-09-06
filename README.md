@@ -62,12 +62,12 @@ The image below demonstrates an example of the expected outcome when filtering f
 
 ### Filtering by Shape
 
-To filter the table by shape, the user inputs the desired shape in the fifth filter form titled, 'Enter a Shape'. Per the placeholder, the entered shape must be either a geometric shape, or other form of UFO sighting phenomenon (for example, 'light') that exists within the table data. The shape must also be entered in all lowercase. To filter the table to view the data for UFO sightings, where the described shape is a circle, the user would simply input 'circle' into the filter form corresponding to the shape filter.
+To filter the table by shape, the user inputs the desired shape in the fifth filter form titled, 'Enter a Shape'. Per the placeholder, the entered shape must be either a geometric shape, or other form of UFO sighting phenomenon (for example, 'light') that exists within the table data. The shape must also be entered in all lowercase. To filter the table to view the data for UFO sightings, where the described shape is a teardrop, the user would simply input 'teardrop' into the filter form corresponding to the shape filter.
 
-The image below demonstrates an example of the expected outcome when filtering for the shape 'circle'.
+The image below demonstrates an example of the expected outcome when filtering for the shape 'teardrop'.
 
 ![shape](filtering_walkthrough_images/shape_filter.png)
-*The result of filtering the table by the shape 'circle'.*
+*The result of filtering the table by the shape 'teardrop'.*
 
 ### Combining Filter Search Criteria
 
